@@ -6,6 +6,8 @@ function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [language, setLanguage] = useState("en");
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const translations = {
     en: {
       home: "Home",
@@ -103,8 +105,14 @@ function App() {
         >
           SA.
         </div>
-
-        <div className="nav-links">
+        <button
+  className="menu-toggle"
+  onClick={() => setMenuOpen(!menuOpen)}
+  aria-label="Open menu"
+>
+  ☰
+</button>
+       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <button onClick={() => setActiveSection("home")}>
             {t.home}
           </button>
