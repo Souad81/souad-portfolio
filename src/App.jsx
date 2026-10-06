@@ -170,8 +170,8 @@ function App() {
         </button>
 
         <a
-  href="/Souad_Al-Rawi_CV.pdf"
-  download="Souad_Al-Rawi_CV.pdf"
+  href="/Souad-Al-Rawi-CV.pdf"
+  download="Souad-Al-Rawi-CV.pdf"
   className="btn secondary-btn"
 >
   {t.downloadCV}
